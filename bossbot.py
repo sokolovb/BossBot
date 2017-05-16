@@ -10,21 +10,10 @@ table = []
 
 def handle(msg):
     content_type, chat_type, chat_id = telepot.glance(msg)
-    print(msg['chat']['first_name'], msg['chat']['last_name'], content_type, chat_type, chat_id, msg['text'])
 
     if content_type == 'text':
 
-        '''
-        flag = False
-        for time in table:
-            if table[time][0] == chat_id and table[time][2] != 'ready':
-                flag = True
-                t = time
-        if flag:
-            table[t][1] = msg['text']
-            table[t][2] = 'ready'
-        else:
-        '''
+        print(msg['chat']['first_name'], msg['chat']['last_name'], content_type, chat_type, chat_id, msg['text'])
 
         if msg['text'] == '/notification':
             bot.sendMessage(chat_id, 'Привет, ' + msg['chat']['first_name'])
@@ -56,6 +45,7 @@ def handle(msg):
                 bot.sendMessage(chat_id, 'Пользуйся командами, пес')
 
     else:
+        print(msg['chat']['first_name'], msg['chat']['last_name'], content_type, chat_type, chat_id)
         bot.sendMessage(chat_id, 'Пользуйся командами, пес')
 
 
