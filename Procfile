@@ -1,1 +1,1 @@
-python BossBot.py
+bot: python BossBot.py
