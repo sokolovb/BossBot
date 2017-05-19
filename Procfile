@@ -1,1 +1,1 @@
-web: python BossBot.py
+web: python bossbot.py
