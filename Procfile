@@ -1,1 +1,1 @@
-web: python bossbot.py
+worker: python bossbot.py
