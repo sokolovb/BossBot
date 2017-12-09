@@ -15,7 +15,10 @@ photodir = '/root/picbot/photos/'
 
 @retry(stop_max_attempt_number=5, wait_fixed=1000)
 def send_photo(ph):
-    bot.send_photo('@easterneurope2017', ph)
+    try:
+        bot.send_photo('@easterneurope2017', ph)
+    except Exception:
+        raise Exception
 
 
 try:
