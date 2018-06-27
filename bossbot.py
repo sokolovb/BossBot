@@ -93,7 +93,7 @@ def notify():
         time.sleep(1)
 
 
-TOKEN = '300052001:AAE6fdytbvLS9Za1w4RjYPibVQQe6URGKYg'
+TOKEN = 'your_token_here'
 
 
 bot = telepot.Bot(TOKEN)
