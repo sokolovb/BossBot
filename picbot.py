@@ -7,7 +7,7 @@ from retrying import retry
 
 logging.basicConfig(format=u'%(levelname)-8s [%(asctime)s] %(message)s', level=logging.INFO, filename=u'picbot.log')
 
-TOKEN = '300052001:AAE6fdytbvLS9Za1w4RjYPibVQQe6URGKYg'
+TOKEN = 'your_token_here'
 bot = telegram.Bot(TOKEN)
 
 photodir = '/root/picbot/photos/'
