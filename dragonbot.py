@@ -6,7 +6,7 @@ ProjectRoot = '/root/BossBot/'
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
                     level=logging.INFO, filename=ProjectRoot + u'dragonbot.log')
 
-TOKEN = '491311774:AAHvib3HoaTTphNom7B9T6-YcI3kEMM7cB8'
+TOKEN = 'your_token_here'
 USERFILE = ProjectRoot + 'users.txt'
 USERS = {}
 
